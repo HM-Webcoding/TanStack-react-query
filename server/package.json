@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This is a mock API server which created by json server ",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch ./database/data.json"
+  },
+  "author": "hm-webcoding",
+  "license": "MIT"
+}
