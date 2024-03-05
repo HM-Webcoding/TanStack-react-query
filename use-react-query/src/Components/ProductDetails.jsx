@@ -30,11 +30,18 @@ const ProductDetails = ({ id }) => {
           alt={product.title}
           className="object-cover h-24 w-24 border rounded-full m-auto"
         />
-        <p>{product.title}</p>
-        <p>{product.description}</p>
+        <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          {product.title}
+        </p>
+        <span>Descriptions:</span>
+        <p className="font-normal text-gray-700 ">{product.description}</p>
         <div className="flex justify-between">
-          <p>Pricce: USD {product.price}</p>
-          <p>Rating: {product.rating}/5</p>
+          <p className="px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+            Pricce: USD {product.price}
+          </p>
+          <p className="px-3 py-2 text-sm font-medium text-white bg-yellow-500 rounded-lg hover:bg-blue-800">
+            Rating: {product.rating}/5
+          </p>
         </div>
       </div>
     </div>
