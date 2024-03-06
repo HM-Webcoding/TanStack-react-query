@@ -28,19 +28,22 @@ const ProductDetails = ({ id }) => {
         <img
           src={product.thumbnail}
           alt={product.title}
-          className="object-cover h-24 w-24 border rounded-full m-auto"
+          className="object-cover h-96 w-full border rounded-lg m-auto"
         />
         <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
           {product.title}
         </p>
         <span>Descriptions:</span>
         <p className="font-normal text-gray-700 ">{product.description}</p>
-        <div className="flex justify-between">
-          <p className="px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800">
-            Pricce: USD {product.price}
-          </p>
-          <p className="px-3 py-2 text-sm font-medium text-white bg-yellow-500 rounded-lg hover:bg-blue-800">
-            Rating: {product.rating}/5
+        <div className="flex justify-between items-center mt-3">
+          <span class="text-3xl font-bold text-gray-900 ">
+            ${product.price}
+          </span>
+          <p className="px-3 py-2 text-xl font-medium text-yellow-500 rounded-lg hover:text-yellow-800">
+            Rating: {product.rating}
+            <span class="bg-blue-100 text-blue-800 text-xl font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">
+              5.0
+            </span>
           </p>
         </div>
       </div>
